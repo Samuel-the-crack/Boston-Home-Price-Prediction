@@ -1,5 +1,5 @@
 # Boston-House-Price-Prediction-Using-Regularized-Regression
-Comparing Ridge and LASSO model to find the best accuracy for House Price 
+Comparing Ridge and LASSO model to find the best accuracy for House Price. 
 
 <p align="center">
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/16402-shutterstock_538341163.jpg">
@@ -9,7 +9,7 @@ Comparing Ridge and LASSO model to find the best accuracy for House Price
 Nowadays house price has been sky-rocketing, thats why I think it's gonna be intersting to do a prediction using [Regularized Regression](https://www.statisticshowto.com/regularized-regression/). This repo is about predicting house price using regularized regression and comparison between [Ridge](https://en.wikipedia.org/wiki/Ridge_regression/) and [LASSO](https://en.wikipedia.org/wiki/Lasso/) accuracy value. The target on this model is 'medv' or house price, the input is a dataframe and the output is a accuracy value. 
   
 **Requirement : numpy, pandas, matplotlib, seaborn, sklearn, statsmodels**
-## Aboout the Data
+## About the Data
 On this [data](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/boston.csv) there are 14 columns:<p/>
 <ul>
 <li>Criminal rate (crim)</li>
@@ -39,12 +39,12 @@ The next step is fit the data using training data using Ridge `from sklearn.line
 <p align='left'>
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/RMSE%20LASSO.JPG" width="320" height="80">
 
-Based on the picture above the best model is ridge data with *lambda* = 1
+Based on the picture above the best model is ridge data with *lambda* = 1.
 
-After that, I calculate the coefficient using ridge data with *lambda* = 1. Last step is calculating the testing error using `from sklearn.metrics import mean_absolute_error` (MAE), `from sklearn.metrics import mean_absolute_percentage_error` (MAPE), `from sklearn.metrics import mean_squared_error` (MSE)
+After that, I calculate the coefficient using ridge data with *lambda* = 1. Last step is calculating the testing error using `from sklearn.metrics import mean_absolute_error` (MAE), `from sklearn.metrics import mean_absolute_percentage_error` (MAPE), `from sklearn.metrics import mean_squared_error` (MSE).
 </p>
 <p align='left'>
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/Testing%20Error.JPG" width="260" height="60">
   
-Based on the picture above we can see that The best model for this dataset is a ridge with *lambda* = 1 using MAE(mean absolute error). For further information and code you can see in my file [here](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/HW_Regression_SamuelAdi.ipynb)
+Based on the picture above we can see that The best model for this dataset is a ridge with *lambda* = 1 using MAE(mean absolute error). For further information and code you can see in my file [here](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/HW_Regression_SamuelAdi.ipynb).
           
