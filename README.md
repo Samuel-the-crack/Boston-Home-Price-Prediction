@@ -38,6 +38,12 @@ The next step is fit the data using training data using Ridge `from sklearn.line
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/RMSE%20Ridge.JPG" width="320" height="80">
 <p align='left'>
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/RMSE%20LASSO.JPG" width="320" height="80">
+Based on the picture above the best model is ridge data with *lambda* = 1
 
-After that I calculate the coefficient using ridge data with *lambda* = 1. Last step is calculating the testing error using `from sklearn.metrics import mean_absolute_error` (MAE), `from sklearn.metrics import mean_absolute_percentage_error` (MAPE), `from sklearn.metrics import mean_squared_error` (MSE) 
+After that I calculate the coefficient using ridge data with *lambda* = 1. Last step is calculating the testing error using `from sklearn.metrics import mean_absolute_error` (MAE), `from sklearn.metrics import mean_absolute_percentage_error` (MAPE), `from sklearn.metrics import mean_squared_error` (MSE)
+
+<p align='left'>
+<img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/Testing%20Error.JPG" width="260" height="60">
+  
+Based on the picture above we can see that The best model for this dataset is a ridge with *lambda* = 1 using MAE(mean absolute error)
           
