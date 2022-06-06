@@ -30,4 +30,7 @@ On this [data](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/
 ## Overview 
 I'm using 'boston.csv' as my main data, after importing it I'm definging the target and the feature the target is 'medv' and the feature is all of the 'boston.csv' columns except 'medv'. Since we want to do a linear regression and find the best lambda I divide the data into train, test, and validation using from `sklearn.model_selection import train_test_split`.
 
-After that I want to check [multicolinearity](https://www.investopedia.com/terms/m/multicollinearity/) variable using [VIF score](https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/) and correlation, for the VIF score I'm using `from statsmodels.stats.outliers_influence import variance_inflation_factor as vif`. Based on the VIF score and correlation I decided to drop 'tax' column to avoid multicolinearity
+After that I want to check [multicolinearity](https://www.investopedia.com/terms/m/multicollinearity/) variable using [VIF score](https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/) and correlation, for the VIF score I'm using `from statsmodels.stats.outliers_influence import variance_inflation_factor as vif`. Based on the VIF score and correlation I decided to drop 'tax' column to avoid multicolinearity. 
+
+The next step is fit the data using training data using Ridge `from sklearn.linear_model import Ridge` and Lasso `from sklearn.linear_model import Lasso`, and then check the best *lambda* using validation data for both Ridge and LASSO based on RMSE.</p>
+<img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/commit/dc3fbec1fa5d982f84236f97dafab3abd290939f">
