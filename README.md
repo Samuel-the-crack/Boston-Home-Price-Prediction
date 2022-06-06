@@ -32,5 +32,12 @@ I'm using 'boston.csv' as my main data, after importing it I'm definging the tar
 
 After that I want to check [multicolinearity](https://www.investopedia.com/terms/m/multicollinearity/) variable using [VIF score](https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/) and correlation, for the VIF score I'm using `from statsmodels.stats.outliers_influence import variance_inflation_factor as vif`. Based on the VIF score and correlation I decided to drop 'tax' column to avoid multicolinearity. 
 
-The next step is fit the data using training data using Ridge `from sklearn.linear_model import Ridge` and Lasso `from sklearn.linear_model import Lasso`, and then check the best *lambda* using validation data for both Ridge and LASSO based on RMSE.</p>
-<img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/commit/dc3fbec1fa5d982f84236f97dafab3abd290939f">
+The next step is fit the data using training data using Ridge `from sklearn.linear_model import Ridge` and Lasso `from sklearn.linear_model import Lasso`, and then check the best *lambda* using validation data for both Ridge and LASSO based on RMSE.
+</p>
+<p align='left'>
+<img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/RMSE%20Ridge.JPG" width="320" height="80">
+<p align='left'>
+<img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/RMSE%20LASSO.JPG" width="320" height="80">
+
+After that I calculate the coefficient using ridge data with *lambda* = 1. Last step is calculating the testing error using `from sklearn.metrics import mean_absolute_error` (MAE), `from sklearn.metrics import mean_absolute_percentage_error` (MAPE), `from sklearn.metrics import mean_squared_error` (MSE) 
+          
