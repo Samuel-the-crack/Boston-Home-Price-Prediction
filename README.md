@@ -46,5 +46,5 @@ After that, I calculate the coefficient using ridge data with *lambda* = 1. Last
 <p align='left'>
 <img src="https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/Testing%20Error.JPG" width="260" height="60">
   
-Based on the picture above we can see that The best model for this dataset is a ridge with *lambda* = 1 using MAE(mean absolute error)
+Based on the picture above we can see that The best model for this dataset is a ridge with *lambda* = 1 using MAE(mean absolute error). For further information and code you can see in my file [here](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/blob/main/HW_Regression_SamuelAdi.ipynb)
           
