@@ -6,7 +6,7 @@ Comparing Ridge and LASSO model to find the best accuracy for House Price
   
 
 ## Background
-Nowadays house price has been sky-rocketing, thats why I think it's gonna be imtersting to do some predictions using [Regularized Regression](https://www.statisticshowto.com/regularized-regression/). This repo is about predicting house price using regularized regression and comparison between [Ridge](https://en.wikipedia.org/wiki/Ridge_regression/) and [LASSO](https://en.wikipedia.org/wiki/Lasso/) accuracy value. The target on this model is 'medv' or house price, the input is a dataframe and the output is a accuracy value. 
+Nowadays house price has been sky-rocketing, thats why I think it's gonna be intersting to do a prediction using [Regularized Regression](https://www.statisticshowto.com/regularized-regression/). This repo is about predicting house price using regularized regression and comparison between [Ridge](https://en.wikipedia.org/wiki/Ridge_regression/) and [LASSO](https://en.wikipedia.org/wiki/Lasso/) accuracy value. The target on this model is 'medv' or house price, the input is a dataframe and the output is a accuracy value. 
   
 **Requirement : numpy, pandas, matplotlib, seaborn, sklearn, statsmodels**
 ## Aboout the Data
@@ -28,4 +28,6 @@ On this [data](https://github.com/Samuel-the-crack/Boston-Home-Price-Prediction/
 </ul>
 
 ## Overview 
+I'm using 'boston.csv' as my main data, after importing it I'm definging the target and the feature the target is 'medv' and the feature is all of the 'boston.csv' columns except 'medv'. Since we want to do a linear regression and find the best lambda I divide the data into train, test, and validation using from `sklearn.model_selection import train_test_split`.
 
+After that I want to check [multicolinearity](https://www.investopedia.com/terms/m/multicollinearity/) variable using [VIF score](https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/) and correlation, for the VIF score I'm using `from statsmodels.stats.outliers_influence import variance_inflation_factor as vif`. Based on the VIF score and correlation I decided to drop 'tax' column to avoid multicolinearity
